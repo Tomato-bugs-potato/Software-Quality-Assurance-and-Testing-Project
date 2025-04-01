@@ -11,6 +11,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
+  "jest": { "transform": {} },
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.25.9",
     "@hookform/resolvers": "^3.9.1",
