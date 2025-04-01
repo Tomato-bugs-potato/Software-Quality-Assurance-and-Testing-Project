@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: '22.x'
           cache: 'npm'
-      - run: cd final/
-      - run: npm ci
-      - run: npm test
+      - name: Install dependencies
+        run: npm ci
+        working-directory: final  # Ensure it runs in the correct directory
+      - name: Run tests
+        run: npm test
+        working-directory: final  # Run tests inside `final/`
