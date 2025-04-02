@@ -1,5 +1,8 @@
-require('dotenv').config();
-const fetch = require('node-fetch');
+import dotenv from 'dotenv';
+import fetch from 'node-fetch';
+dotenv.config();
+
+// const fetch = require('node-fetch');
 
 async function createJiraIssue(error) {
   const { JIRA_EMAIL, JIRA_API_TOKEN, JIRA_PROJECT_KEY, GITHUB_SHA } = process.env;

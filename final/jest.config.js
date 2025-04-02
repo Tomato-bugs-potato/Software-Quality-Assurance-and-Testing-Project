@@ -1,5 +1,6 @@
 // jest.config.js
-const nextJest = require('next/jest');
+import nextJest from 'next/jest';
+// const nextJest = require('next/jest');
 
 const createJestConfig = nextJest({
   dir: './',
